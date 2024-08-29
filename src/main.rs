@@ -6,7 +6,7 @@ mod utils;
 use coffee_shop_operations::inventory_models::CoffeeShopInventory;
 use customer_order_operations::customer_order_model::CustomerOrderHistory;
 use menus::{auth_menu::AuthMenu, run_admin_program, run_client_program};
-
+    
 fn run_program() -> Option<()> {
     let mut customer_orders = CustomerOrderHistory::new();
     let mut coffee_inventory = CoffeeShopInventory::new();
