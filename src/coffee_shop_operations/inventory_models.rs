@@ -1,14 +1,12 @@
 use std::collections::HashMap;
 
-use crate::coffee_operation::operation_manager::CoffeeOperationManager;
-
 use super::product_model::CoffeeProduct;
 
-pub struct CoffeeShopInventory<T> {
+pub struct CoffeeShopInventory {
     inventory: HashMap<String, CoffeeProduct>,
 }
 
-impl  CoffeeShopInventory {
+impl CoffeeShopInventory {
     pub fn new() -> Self {
         Self {
             inventory: HashMap::new(),
@@ -37,18 +35,3 @@ impl  CoffeeShopInventory {
         }
     }
 }
-
-
-// impl<T> CoffeeOperationManager<T> for CoffeeShopInventory{
-//     fn new() -> Self {
-//         todo!()
-//     }
-
-//     fn add_item(&mut self, item: T) {
-//         todo!()
-//     }
-
-//     fn view_item(&self) {
-//         todo!()
-//     }
-// }
