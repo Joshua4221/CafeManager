@@ -8,8 +8,8 @@ pub mod auth_menu;
 pub mod custome_menu;
 pub mod product_menu;
 
-use product_menu::CoffeeShopMenu;
 use custome_menu::CustomerMenu;
+use product_menu::CoffeeShopMenu;
 
 pub fn run_admin_program(
     coffee_inventory: &mut CoffeeShopInventory,
